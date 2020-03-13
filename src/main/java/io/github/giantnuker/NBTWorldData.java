@@ -1,4 +1,4 @@
-package io.github.indicode.fabric.worlddata;
+package io.github.giantnuker;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtIo;

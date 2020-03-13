@@ -1,4 +1,4 @@
-package io.github.indicode.fabric.worlddata;
+package io.github.giantnuker;
 
 import com.google.common.collect.ImmutableList;
 

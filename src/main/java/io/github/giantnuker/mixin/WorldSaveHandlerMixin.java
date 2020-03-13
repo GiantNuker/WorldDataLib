@@ -1,7 +1,7 @@
-package io.github.indicode.fabric.worlddata.mixin;
+package io.github.giantnuker.mixin;
 
 import com.mojang.datafixers.DataFixer;
-import io.github.indicode.fabric.worlddata.WorldDataLib;
+import io.github.giantnuker.WorldDataLib;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.WorldSaveHandler;

@@ -1,10 +1,8 @@
-package io.github.indicode.fabric.worlddata.mixin;
+package io.github.giantnuker.mixin;
 
-import com.google.gson.JsonElement;
-import io.github.indicode.fabric.worlddata.WorldDataLib;
+import io.github.giantnuker.WorldDataLib;
 import net.minecraft.class_4952;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.world.level.LevelGeneratorType;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
