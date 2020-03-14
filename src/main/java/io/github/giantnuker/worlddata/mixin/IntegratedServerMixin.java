@@ -5,13 +5,13 @@ import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import com.mojang.datafixers.DataFixer;
 import io.github.giantnuker.worlddata.WorldDataLib;
-import net.minecraft.class_4952;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.WorldGenerationProgressListenerFactory;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.integrated.IntegratedServer;
 import net.minecraft.util.UserCache;
+import net.minecraft.world.level.LevelGeneratorOptions;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -31,7 +31,7 @@ public abstract class IntegratedServerMixin extends MinecraftServer {
     }
 
     @Inject(method = "loadWorld", at = @At("RETURN"))
-    private void loadNBT(String string, String string2, long l, class_4952 arg, CallbackInfo ci) {
+    private void loadNBT(String string, String string2, long l, LevelGeneratorOptions levelGeneratorOptions, CallbackInfo ci) {
         WorldDataLib.Internals.setGameDir(MinecraftClient.getInstance().runDirectory);
         WorldDataLib.Internals.setWorldDir(new File(getLevelStorage().getSavesDirectory() + "/" + string));
         WorldDataLib.getIOCallbacks().forEach(callback -> callback.onWorldLoad(new File(getLevelStorage().getSavesDirectory() + "/" + string), MinecraftClient.getInstance().runDirectory));
