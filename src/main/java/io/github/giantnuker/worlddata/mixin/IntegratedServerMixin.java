@@ -1,10 +1,10 @@
-package io.github.giantnuker.mixin;
+package io.github.giantnuker.worlddata.mixin;
 
 import com.mojang.authlib.GameProfileRepository;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import com.mojang.datafixers.DataFixer;
-import io.github.giantnuker.WorldDataLib;
+import io.github.giantnuker.worlddata.WorldDataLib;
 import net.minecraft.class_4952;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.server.MinecraftServer;

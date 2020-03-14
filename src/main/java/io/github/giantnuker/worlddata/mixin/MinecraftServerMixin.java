@@ -1,6 +1,6 @@
-package io.github.giantnuker.mixin;
+package io.github.giantnuker.worlddata.mixin;
 
-import io.github.giantnuker.WorldDataLib;
+import io.github.giantnuker.worlddata.WorldDataLib;
 import net.minecraft.class_4952;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Final;

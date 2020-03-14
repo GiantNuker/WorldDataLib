@@ -1,4 +1,4 @@
-package io.github.giantnuker;
+package io.github.giantnuker.worlddata;
 
 import java.io.File;
 
